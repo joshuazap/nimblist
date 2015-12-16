@@ -34,3 +34,5 @@ gem 'bootstrap-sass'
 gem 'bcrypt'
 # Use Figaro for handling sensitive data with environment variables
 gem 'figaro', '1.0'
+# Use Devise for authentication
+gem 'devise'
