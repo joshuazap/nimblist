@@ -2,14 +2,13 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.4'
+gem 'pg'
 
 group :production do
-  gem 'pg'
   gem 'rails_12factor'
 end
 
 group :development do
-  gem 'pg'
 end
 
 group :development, :test do
