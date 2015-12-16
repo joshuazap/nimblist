@@ -12,6 +12,8 @@
     <ul class="nav nav-tabs">
       <li><%= link_to "Nimblist", root_path %></li>
       <li><%= link_to "About", welcome_about_path %></li>
+      <div class="pull-right user-info">
+        <%= link_to "Sign Up", new_user_path %>
     </ul>
     <div class="flash">
     <% if flash[:notice] %>
