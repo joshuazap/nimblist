@@ -7,7 +7,7 @@ Rails.application.routes.draw do
 
   get 'welcome/faq'
 
-  root 'welcome#index'
+  root 'users#show'
 
   resources :users, only: [:show]
 
