@@ -7,9 +7,7 @@
 
 <h1>My To-Do List</h1>
 <div class='new-comment'; style='margin-top: 15px;'>
-  <% if current_user.items.any? %>
     <%= render partial: 'items/form', locals: { item: @item } %>
-  <% end %>
 </div>
 
 <table class="table table-hover">

@@ -31,10 +31,10 @@ class ItemsController < ApplicationController
   def destroy
     @item = Item.find(params[:id])
     if @item.destroy
-      flash[:notice] = "To-do was destroyed"
+      flash[:notice] = "To-do was deleted."
       redirect_to items_path
     else
-      flash[:notice] = "There was a problem destroying the to-do"
+      flash[:notice] = "There was a problem deleting the to-do."
       redirect_to items_path
     end
   end
