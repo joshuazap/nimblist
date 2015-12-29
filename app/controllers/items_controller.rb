@@ -18,14 +18,14 @@ class ItemsController < ApplicationController
   end
 
   def create
-     @item = current_user.items.build(item_params)
+    @item = current_user.items.build(item_params)
 
     if @item.save
-       flash[:notice] = "Item was saved."
-     else
-       flash[:error] = "There was an error saving the item. Please try again."
-     end
-     redirect_to root_path
+      flash[:notice] = "Item was saved."
+    else
+      flash[:error] = "There was an error saving the item. Please try again."
+    end
+    redirect_to root_path
   end
 
   def destroy
