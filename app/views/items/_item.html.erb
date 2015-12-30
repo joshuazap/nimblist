@@ -1,5 +1,5 @@
-<% if current_user.items.any? %>
-  <% current_user.items.each do |item| %> 
-    <p><%= link_to "", item, class: 'glyphicon glyphicon-ok', method: :delete, remote: :true %> | <%= item.name %></p>
-  <% end %>
-<% end %>
+<tr id="item-<%= item.id %>">
+  <td><%= item.name %></td>
+  <td><%= item.days_left %></td>
+  <td><%= link_to "", item, class: 'glyphicon glyphicon-ok', method: :delete, remote: true %></td>
+</tr>

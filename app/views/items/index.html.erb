@@ -6,14 +6,10 @@
         <th>Days Left</th>
         <th>Status</th>
       </tr>
-      <tr>
-          <% @items.each do |item| %>
-            <tr>
-              <td><%= item.name %></td>
-              <td><%= item.days_left %></td>
-              <td><%= link_to "", item, method: :delete, class: 'glyphicon glyphicon-ok', data: { confirm: 'Are you sure you want to delete this to-do?'} %></td>
-            <% end %>
-      </tr>
+      <tbody class="js-items">
+        <%= render @items %>
+      </tbody>
+    </table>
 <div class='new-item'>
   <%= render partial: 'items/form', locals: { item: Item.new } %>
 </div>
