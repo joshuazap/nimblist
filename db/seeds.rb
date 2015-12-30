@@ -8,6 +8,14 @@
 require 'rubygems'
 require 'faker'
 
+# Create test admin
+admin = User.create!(
+  email: 'joshuazap+nimadmin@gmail.com',
+  password: 'mypassword'
+)
+admin.skip_confirmation!
+admin.save!
+
 # Create fake data for users
 5.times do
   user = User.create!(
