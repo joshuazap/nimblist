@@ -25,17 +25,24 @@ class ItemsController < ApplicationController
     else
       flash[:error] = "There was an error saving the item. Please try again."
     end
-    redirect_to items_path
+    
+    respond_to do |format|
+      format.html { redirect_to items_path }
+      format.js
+    end
   end
 
   def destroy
     @item = Item.find(params[:id])
     if @item.destroy
       flash[:notice] = "To-do was deleted."
-      redirect_to items_path
     else
       flash[:notice] = "There was a problem deleting the to-do."
-      redirect_to items_path
+    end
+
+    respond_to do |format|
+      format.html { redirect_to items_path }
+      format.js
     end
   end
 
