@@ -37,3 +37,5 @@ gem 'bcrypt'
 gem 'figaro', '1.0'
 # Use Devise for authentication
 gem 'devise'
+# Use Rufus-Scheduler to automate old item deletion
+gem 'rufus-scheduler', '3.2.0'

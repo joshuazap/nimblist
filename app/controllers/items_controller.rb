@@ -2,7 +2,7 @@ class ItemsController < ApplicationController
 
   def index
     @user = current_user
-    @items = current_user.items
+    @items = @current_user.items
   end
 
   def days_left
