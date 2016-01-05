@@ -1,8 +1,7 @@
 class ItemsController < ApplicationController
 
   def index
-    @user = current_user
-    @items = current_user.items
+
   end
 
   def days_left
@@ -25,7 +24,7 @@ class ItemsController < ApplicationController
     else
       flash[:error] = "There was an error saving the item. Please try again."
     end
-    
+
     respond_to do |format|
       format.html { redirect_to items_path }
       format.js

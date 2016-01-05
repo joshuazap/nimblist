@@ -8,12 +8,12 @@ Rails.application.routes.draw do
   get 'welcome/faq'
 
   root 'welcome#index'
-  
+
   resources :users, only: [:show]
   resources :items
 
-  authenticated :user do
-    root to: 'items#index', as: :authenticated_root
-  end
+#  authenticated :user do
+#    root to: 'items#index', as: :authenticated_root
+#  end
 
 end
