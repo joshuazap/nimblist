@@ -5,7 +5,9 @@ Nimblist aims to keep your to-do lists manageable by automatically deleting to-d
 - user account creation, sign in, and sign out
 - email confirmations and integration through SendGrid
 
-Check out a live demo of this app at https://nimblist.herokuapp.com/
+Built with test-driven development using Ruby, Rails, jQuery, AJAX, Bootstrap and PostreSQL. Check out a live demo of this app at https://nimblist.herokuapp.com/
+
+![Nimblist screenshot](http://www.joshuazapata.com/img/nimblist_screen.png)
 
 ## Other details
 
