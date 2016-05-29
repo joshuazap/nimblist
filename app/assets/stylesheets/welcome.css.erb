@@ -1,6 +1,11 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+*= require bootstrap.min
+*= require_self
+*= require_tree .
+//= depend_on_asset "arrow-up-grey.png"
+*/
 
 .social-btn {
   color: #00aced;
@@ -8,4 +13,8 @@
   padding: 5 5 5 5;
   width: 100px;
   text-align: center;
+}
+
+.jumbotron {
+  background: url('<%= asset_path('nimblist_bg.PNG') %>') no-repeat 0 0;
 }
